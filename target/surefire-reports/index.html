@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-scripts_UnitedAirlinesTest" class="navigator-link">
+              <span class="suite-name border-failed">scripts.UnitedAirlinesTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-scripts_UnitedAirlinesTest" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-scripts_UnitedAirlinesTest" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-scripts_UnitedAirlinesTest" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-scripts_UnitedAirlinesTest" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-scripts_UnitedAirlinesTest" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-scripts_UnitedAirlinesTest" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-scripts_UnitedAirlinesTest" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-scripts_UnitedAirlinesTest" class="hide-methods failed suite-scripts_UnitedAirlinesTest"> (hide)</a> <!-- hide-methods failed suite-scripts_UnitedAirlinesTest -->
+                      <a href="#" panel-name="suite-scripts_UnitedAirlinesTest" class="show-methods failed suite-scripts_UnitedAirlinesTest"> (show)</a> <!-- show-methods failed suite-scripts_UnitedAirlinesTest -->
+                    </span>
+                    <div class="method-list-content failed suite-scripts_UnitedAirlinesTest">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-scripts_UnitedAirlinesTest" title="scripts.UnitedAirlinesTest" class="method navigator-link" hash-for-method="testOneWayTicketSearchResults">testOneWayTicketSearchResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-scripts_UnitedAirlinesTest" title="scripts.UnitedAirlinesTest" class="method navigator-link" hash-for-method="testRoundTripAndOneWayRadioButtons">testRoundTripAndOneWayRadioButtons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-scripts_UnitedAirlinesTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-scripts_UnitedAirlinesTest" class="hide-methods passed suite-scripts_UnitedAirlinesTest"> (hide)</a> <!-- hide-methods passed suite-scripts_UnitedAirlinesTest -->
+                      <a href="#" panel-name="suite-scripts_UnitedAirlinesTest" class="show-methods passed suite-scripts_UnitedAirlinesTest"> (show)</a> <!-- show-methods passed suite-scripts_UnitedAirlinesTest -->
+                    </span>
+                    <div class="method-list-content passed suite-scripts_UnitedAirlinesTest">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-scripts_UnitedAirlinesTest" title="scripts.UnitedAirlinesTest" class="method navigator-link" hash-for-method="testBookTravelMenu">testBookTravelMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-scripts_UnitedAirlinesTest" title="scripts.UnitedAirlinesTest" class="method navigator-link" hash-for-method="testMainMenuNavDisplay">testMainMenuNavDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-scripts_UnitedAirlinesTest" title="scripts.UnitedAirlinesTest" class="method navigator-link" hash-for-method="testMilesAndDatesCheckBoxes">testMilesAndDatesCheckBoxes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-scripts_UnitedAirlinesTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-scripts_UnitedAirlinesTest" class="panel scripts_UnitedAirlinesTest">
+          <div class="suite-scripts_UnitedAirlinesTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">scripts.UnitedAirlinesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOneWayTicketSearchResults">
+                  </a> <!-- testOneWayTicketSearchResults -->
+                  <span class="method-name">testOneWayTicketSearchResults</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#passengerSelector&quot;}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Reems-MacBook-Air.local&apos;, ip: &apos;2601:244:4801:930:5cb8:7ee3:2113:7222%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.1&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/01/c_s4m6zs411...}, goog:chromeOptions: {debuggerAddress: localhost:64863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a5d5d92316c92251d9bc327b41f021de
+*** Element info: {Using=css selector, value=#passengerSelector}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
+	at scripts.UnitedAirlinesTest.testOneWayTicketSearchResults(UnitedAirlinesTest.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test Case 5: Validate One-way ticket search results from Chicago, IL, US (ORD) to Miami, FL, US (MIA)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRoundTripAndOneWayRadioButtons">
+                  </a> <!-- testRoundTripAndOneWayRadioButtons -->
+                  <span class="method-name">testRoundTripAndOneWayRadioButtons</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at scripts.UnitedAirlinesTest.testRoundTripAndOneWayRadioButtons(UnitedAirlinesTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test Case 3: Validate Round-trip and One-way radio buttons)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-scripts_UnitedAirlinesTest-class-failed -->
+          <div class="suite-scripts_UnitedAirlinesTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts.UnitedAirlinesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBookTravelMenu">
+                  </a> <!-- testBookTravelMenu -->
+                  <span class="method-name">testBookTravelMenu</span>
+                  <em>
+(Test Case 2: Validate Book travel menu navigation items)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMainMenuNavDisplay">
+                  </a> <!-- testMainMenuNavDisplay -->
+                  <span class="method-name">testMainMenuNavDisplay</span>
+                  <em>
+(Test Case 1: Validate Main menu navigation items)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMilesAndDatesCheckBoxes">
+                  </a> <!-- testMilesAndDatesCheckBoxes -->
+                  <span class="method-name">testMilesAndDatesCheckBoxes</span>
+                  <em>
+(Test Case 4: Validate Book with miles and Flexible dates checkboxes)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-scripts_UnitedAirlinesTest-class-passed -->
+        </div> <!-- panel scripts_UnitedAirlinesTest -->
+        <div panel-name="test-xml-scripts_UnitedAirlinesTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;scripts.UnitedAirlinesTest&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;scripts.UnitedAirlinesTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- scripts.UnitedAirlinesTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-scripts_UnitedAirlinesTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for scripts.UnitedAirlinesTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-scripts_UnitedAirlinesTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for scripts.UnitedAirlinesTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-scripts_UnitedAirlinesTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for scripts.UnitedAirlinesTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_scripts_UnitedAirlinesTest');
+function tableData_scripts_UnitedAirlinesTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testOneWayTicketSearchResults')
+data.setCell(0, 2, 'scripts.UnitedAirlinesTest')
+data.setCell(0, 3, 26200);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testMilesAndDatesCheckBoxes')
+data.setCell(1, 2, 'scripts.UnitedAirlinesTest')
+data.setCell(1, 3, 9607);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testRoundTripAndOneWayRadioButtons')
+data.setCell(2, 2, 'scripts.UnitedAirlinesTest')
+data.setCell(2, 3, 9204);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testMainMenuNavDisplay')
+data.setCell(3, 2, 'scripts.UnitedAirlinesTest')
+data.setCell(3, 3, 9047);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testBookTravelMenu')
+data.setCell(4, 2, 'scripts.UnitedAirlinesTest')
+data.setCell(4, 3, 7446);
+window.suiteTableData['scripts_UnitedAirlinesTest']= { tableData: data, tableDiv: 'times-div-scripts_UnitedAirlinesTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-scripts_UnitedAirlinesTest">
+              </div> <!-- times-div-scripts_UnitedAirlinesTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-scripts_UnitedAirlinesTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for scripts.UnitedAirlinesTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-scripts_UnitedAirlinesTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-scripts_UnitedAirlinesTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.UnitedAirlinesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMainMenuNavDisplay</span>
+                <span class="method-start">8904 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">17955 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">21379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBookTravelMenu</span>
+                <span class="method-start">23889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">31337 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34700 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRoundTripAndOneWayRadioButtons</span>
+                <span class="method-start">37352 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">46559 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">50062 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMilesAndDatesCheckBoxes</span>
+                <span class="method-start">52629 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">62236 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">65776 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testOneWayTicketSearchResults</span>
+                <span class="method-start">68077 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">94279 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
